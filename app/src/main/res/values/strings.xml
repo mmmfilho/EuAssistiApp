@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Eu Assisti</string>
+    <string name="title_activity_save_filme">Salvar Filme</string>
+    <string name="title_activity_filmes">Filmes Assistidos</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_list_filmes">ListFilmes</string>
+    <string name="title_activity_salvar_filme">SalvarFilmeActivity</string>
+</resources>

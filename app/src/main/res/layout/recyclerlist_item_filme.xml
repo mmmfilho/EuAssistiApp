@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/cardlist_filme"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="@dimen/cardview_default_elevation"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/listitem_sdview_poster"
+                android:layout_alignParentLeft="true"
+                android:layout_width="100dp"
+                android:layout_height="200dp"
+                android:layout_marginRight="7dp"
+                fresco:roundBottomRight="true"
+                fresco:fadeDuration="300"
+                fresco:actualImageScaleType="centerCrop"
+                fresco:progressBarAutoRotateInterval="1000"
+                fresco:roundAsCircle="false"
+                fresco:roundedCornerRadius="1dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/listitem_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Titulo do Filme"
+                android:textColor="@color/primary_text_default_material_light"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/listitem_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ano do Filme"
+                android:textColor="@color/primary_text_default_material_light"
+                android:textSize="20dp" />
+
+
+            <Button
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/button_excluir"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@android:color/transparent"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="Excluir"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="right"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
